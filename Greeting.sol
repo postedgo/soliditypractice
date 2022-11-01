@@ -34,3 +34,8 @@ contract Greeting {
 // external: only visble externally, howver can be accessed within the current contract via 'this.func'
 
 // public - visible externally and internally - including getter functions for storage/state variables
+
+//function state mutability:
+//view: functions declared with view can read state but not modify it
+// pure: functions declared with pure can neither read nor modify state
+// payable: functions declared with payable can accept ether sent to the contract. if 'payable' not specified, function will automatically reject all ether sent to it
